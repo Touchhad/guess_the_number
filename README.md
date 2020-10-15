@@ -14,16 +14,16 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-    TextView tvInfo;
-    EditText etInput;
-    Button bControl;
+   TextView tvInfo;
+   EditText etInput;
+   Button bControl;
 
-    int guess;
-    boolean gameFinished;
+   int guess;
+   boolean gameFinished;
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+   @Override
+   protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tvInfo = (TextView) findViewById(R.id.textView2);
@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 
     }
 
-    public void OnClick(View v){
+   public void OnClick(View v){
         if (!gameFinished){
             int inp=Integer.parseInt(etInput.getText().toString());
             if (inp > guess)
